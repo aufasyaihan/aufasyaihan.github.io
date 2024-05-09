@@ -1,1 +1,187 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project RevoU | Travel Agent</title>
+</head>
+<body>
+    <header class="navigation-container">
+        <img href="#home" class="navigation-icon" src="assets/logo.png" alt="">
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="navigation-links">
+            <a href="#home">Home</a>
+            <a href="#ourPackage">Our Package</a>
+            <a href="#callUs">Call Us</a>
+        </nav>
+    </header>
+    
+
+    <article class="content-container" id="home">
+        <header class="title-content">
+            <h1>Your Trusted Travel Agent</h1>
+            <p>Your happines is our happines</p>
+        </header>
+
+        <section class="core-content">
+            <div class="core-item" id="core-left">
+                <section class="photo-section">
+                    
+                    <picture>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade" >
+                              <img src="assets/Juicy Luicy.png">
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="assets/Juicy Luicy 2.png">
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="assets/Xiao.png">
+                            </div>
+                          
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                            </div>
+                        </div>
+                        <script src="js/script.js"></script>
+                    </picture>
+
+                    <blockquote>"Liburanku jadi menyenangkan bersama Travel Agentku."</blockquote>
+
+                    <div class="profile-section">
+                        <img class="" src="assets/rei takahashi.jpg" alt="">
+                        <div class="profile-identity">
+                            <h1>Florence Hughes</h1>
+                            <p>Ibu Rumah Tangga, 28</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="description-section">
+                    <h1>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h1>
+                    <ul class="rounded-list">
+                        <li>Your first feature, written in the form of a benefit statement.</li>
+                        <li>Your second feature, written in the form of a benefit statement.</li>
+                        <li>Your third feature written, in the form of a benefit statement.</li>
+                    </ul>
+                </section>
+            </div> <!-- Ini JS-nya -->
+
+            <div class="core-item" id="core-right">
+                <header class="title-form">
+                    <h1>Contact Us</h1>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                </header>
+
+                <form class="item-form">
+                    <label for="fullName">Your Name :</label>
+                    <input type="text" id="fullName" placeholder="First and last name">
+                    <div id="fullNameError"></div>
+                    <label for="email">Email Address :</label>
+                    <input type="email" id="email" placeholder="example@email.com">
+                    <div id="emailError"></div>
+                    <label for="interest">What are you interested in?</label>
+                    <select name="interest" id="interest">
+                        <option value="">Select option</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Product Manager">Product Manager</option>
+                        <option value="Data Analytics">Data Analytics</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                    </select>
+                    <div class="dropdown-border"></div>
+                    <div id="interestError"></div>
+                    <button onclick="sendContact();" id="Send">SEND</button>
+                </form>
+                <script src="js/script.js"></script>
+            
+            </div>
+        </section>
+
+        <section class="our-package-separator" id="ourPackage">
+            <h1>Our Package</h1>
+        </section>
+
+        <section class="our-package-container">
+            <div class="our-package-item">
+                <img class="our-package-icon" src="assets/Logo/lightbulb.jpeg" alt="">
+                <div class="our-package-content">
+                    <h1>Bali</h1>
+                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="our-package-item">
+                <img class="our-package-icon" src="assets/Logo/lightbulb.jpeg" alt="">
+                <div class="our-package-content">
+                    <h1>Japan</h1>
+                    <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="our-package-item">
+                <img class="our-package-icon" src="assets/Logo/lightbulb.jpeg" alt="">
+                <div class="our-package-content">
+                    <h1>Singapore</h1>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-package-container">
+            <div class="our-package-item">
+                <img class="our-package-icon" src="assets/Logo/star.jpg" alt="">
+                <div class="our-package-content">
+                    <h1>Surabaya</h1>
+                    <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+
+            <div class="our-package-item">
+                <img class="our-package-icon" src="assets/Logo/star.jpg" alt="">
+                <div class="our-package-content">
+                    <h1>Singapore</h1>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+
+            <div class="our-package-item">
+                <img class="our-package-icon" src="assets/Logo/star.jpg" alt="">
+                <div class="our-package-content">
+                    <h1>Bandung</h1>
+                    <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="closing-argument-container" id="callUs">
+            <h1>Your Closing Argument Headline</h1>
+            <p>I do not have enough information about that person to help with your request. I am a large language model, and I am able to communicate and generate human-like text in response to a wide range of prompts and questions, but my knowledge about this person is limited. Is there anything else I can do to help you with this request?</p>
+            <a href="http://github.com">CALL TO ACTION</a>
+        </section>
+        <hr>
+    </article>
+    <footer>
+        <section class="footer-container">
+            <img class="footer-icon" src="assets/logo.png" alt="">
+            <div class="footer-item">
+                <p><a href="">Terms of Service</a></p>
+                <p><a href="">Privacy Policy</a></p>
+            </div>
+            <p>@ 2024 moqups</p>
+        </section>
+    </footer> 
+    
+</body>
+</html>
